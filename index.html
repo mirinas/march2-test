@@ -4,20 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        input {
+            margin: 0.5em 0;
+            padding: 2px;
+            display: block;
+            font-weight: bold;
+        }
+
+        input[type="submit"] {
+            /* tarpas elementoje viduje (viduj remeliu) */
+            padding: 0 1em;
+            /* tarpas elemento isoreje (uz remeliu / tarp elementu) */
+            margin: 1em 0;
+        }
+    </style>
 </head>
 <body>
     
     <form>
         <label>Password:</label>
-        <br>
         <input type="password" minlength="5">
         <label>Choose file:</label>
-        <br>
         <input type="file">
-        <br>
         <label>Favourite colour</label>
         <input type="color">
-        <br>
         <input placeholder="Enter your email" required type="email">
         <br>
         <!-- Mygtukas issiuncia visa informacija -->
